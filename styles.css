@@ -120,7 +120,6 @@ a:active {
 }
 
 .navHobby {
-
     height: 30%;
     width: 100%;
 }
@@ -147,4 +146,121 @@ a:active {
     line-height: 18px;
     margin: 6px 0;
     font-size: 24px;
+}
+
+
+@media only screen and (max-width:1000px) {
+
+    .header-txt, .menu, .education {
+        width: 80%;
+        padding: 0;
+        margin: 0 10%;
+        float: inherit;
+    }
+
+    .hobby {
+        margin-top: 5%;
+    }
+
+    h1 {
+        line-height: 24px;
+        font-size: 22px;
+        margin: 4px 0;
+        max-height: 40%;
+    }
+
+    h2 {
+        line-height: 20px;
+        font-size: 18px;
+        margin: 4px 0;
+        max-height: 40%;
+    }
+
+    .after {
+        line-height: 14px;
+        margin: 3px 0;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .actual {
+        line-height: 14px;
+        margin: 3px 0;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .before {
+        line-height: 14px;
+        margin: 3px 0;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .image {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:1500px) {
+
+    .header-txt, .education, .hobby {
+        width: 60%;
+        padding: 0;
+        margin: 1% 10%;
+        float: left;
+    }
+
+    .menu {
+        margin-left: 10%;
+        padding: 2%;
+        width: 20%;
+        float: left;
+    }
+
+    .hobby {
+        margin-top: 25%;
+        padding: 2%;
+        padding-top: 25%;
+    }
+
+    .image {
+        margin-top: 0;
+    }
+
+    h1 {
+        line-height: 32px;
+        font-size: 30px;
+        margin: 8px 0;
+        max-height: 40%;
+    }
+
+    h2 {
+        line-height: 28px;
+        font-size: 24px;
+        margin: 6px 0;
+        max-height: 40%;
+    }
+
+    .after {
+        line-height: 18px;
+        margin: 5px 0;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .actual {
+        line-height: 18px;
+        margin: 5px 0;
+        font-size: 18px;
+        text-align: center;
+        max-height: 38px;
+    }
+
+    .before {
+        line-height: 18px;
+        margin: 5px 0;
+        font-size: 18px;
+        text-align: center;
+    }
 }
