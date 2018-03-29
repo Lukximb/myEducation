@@ -265,6 +265,61 @@ a:active {
     }
 }
 
+@media only screen and (max-width:1000px) {
+
+    .header-txt, .menu, .education, .hobby {
+        width: 100%;
+        padding: 0;
+        margin: 1%;
+        text-align: center;
+    }
+
+    .hobby {
+        margin-top: 3%;
+        padding-top: 3%;
+    }
+
+    .image {
+        display: none;
+    }
+
+    h1 {
+        line-height: 26px;
+        font-size: 24px;
+        margin: 6px 0;
+        max-height: 40%;
+    }
+
+    h2 {
+        line-height: 22px;
+        font-size: 20px;
+        margin: 5px 0;
+        max-height: 40%;
+    }
+
+    .after {
+        line-height: 20px;
+        margin: 5px 0;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .actual {
+        line-height: 20px;
+        margin: 5px 0;
+        font-size: 18px;
+        text-align: center;
+        max-height: 24px;
+    }
+
+    .before {
+        line-height: 20px;
+        margin: 5px 0;
+        font-size: 18px;
+        text-align: center;
+    }
+}
+
 @media only screen and (max-width:750px) {
 
     .header-txt, .menu, .education, .hobby {
