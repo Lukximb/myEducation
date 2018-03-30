@@ -58,6 +58,10 @@ a:active {
     text-decoration: underline;
 }
 
+li {
+    max-height: 30%;
+}
+
 .container {
     width: 100%;
 }
@@ -125,13 +129,171 @@ a:active {
     color: #FF8100;
     margin-top: 3%;
     padding: 5%;
+    padding-top: 10%;
     max-height: 20%;
 }
 
 .description {
     background-color: #454545;
+    font-size: 90%;
     color: aliceblue;
     margin-top: 2.2%;
-    padding: 5%;
+    padding: 1%;
+    padding-top: 3%;
     max-height: 20%;
+}
+
+.description2 {
+    background-color: #454545;
+    color: aliceblue;
+    margin-top: 2.2%;
+    padding: 1%;
+    padding-top: 7%;
+    max-height: 20%;
+}
+
+@media only screen and (max-width:1500px) {
+
+    .header-txt {
+        width: 60%;
+        padding: 0;
+        margin: 1% 10%;
+        float: left;
+    }
+
+    h1 {
+        line-height: 32px;
+        font-size: 30px;
+        margin: 8px 0;
+        max-height: 40%;
+    }
+
+    h2 {
+        line-height: 28px;
+        font-size: 24px;
+        margin: 6px 0;
+        max-height: 40%;
+    }
+
+    li {
+        font-size: 95%;
+        max-height: 20%;
+    }
+
+    .course {
+        font-size: 90%;
+    }
+}
+
+@media only screen and (max-width:1000px) {
+
+    .goback {
+        width: 40%;
+        margin-top: -12%;
+        float: right;
+    }
+
+    .header-txt {
+        width: 100%;
+        padding: 0;
+        margin: 1%;
+        text-align: center;
+    }
+
+    h1 {
+        line-height: 26px;
+        font-size: 24px;
+        margin: 6px 0;
+        max-height: 40%;
+    }
+
+    h2 {
+        line-height: 22px;
+        font-size: 20px;
+        margin: 5px 0;
+        max-height: 40%;
+    }
+
+    li {
+        font-size: 70%;
+        max-height: 20%;
+    }
+
+    .tittle {
+        font-size: 85%;
+    }
+
+    .course {
+        font-size: 70%;
+    }
+
+    .description {
+        font-size: 85%;
+        margin-top: 2.2%;
+    }
+}
+
+@media only screen and (max-width:750px) {
+
+    .middle {
+        width: 90%;
+    }
+
+    .goback {
+        width: 100%;
+        margin: 0;
+        margin-top: -5%;
+        padding: 0;
+        position: static;
+    }
+
+    .header-txt {
+        width: 100%;
+        padding: 0;
+    }
+
+    h1 {
+        line-height: 26px;
+        font-size: 24px;
+        margin: 6px 0;
+        max-height: 25%;
+    }
+
+    h2 {
+        line-height: 22px;
+        font-size: 20px;
+        margin: 5px 0;
+        max-height: 25%;
+    }
+
+    li {
+        margin: 0;
+        font-size: 65%;
+        max-height: 25%;
+    }
+
+    .column1, .column2 {
+        height: 100%;
+    }
+
+    .tittle {
+        margin-top: 1%;
+        font-size: 70%;
+    }
+
+    .course {
+        font-size: 55%;
+    }
+
+    .description {
+        line-height: 16px;
+        font-size: 85%;
+        margin-top: 2.2%;
+    }
+
+    .description2 {
+        line-height: 18px;
+        font-size: 85%;
+        margin-top: 2.2%;
+    }
 }
