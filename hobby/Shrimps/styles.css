@@ -47,10 +47,6 @@ a:active {
     text-decoration: underline;
 }
 
-article {
-    padding-top: 5%;
-}
-
 .container {
     width: 100%;
     height: 100%;
@@ -117,6 +113,10 @@ article {
     float: left;
 }
 
+.article {
+    margin-top: 5%;
+}
+
 @media only screen and (max-width:1500px) {
 
     .header-txt {
@@ -140,7 +140,7 @@ article {
         max-height: 40%;
     }
 
-    article {
+    .article {
         padding-top: 10%;
     }
 }
@@ -182,6 +182,10 @@ article {
 
 @media only screen and (max-width:750px) {
 
+    * {
+        line-height: 18px;
+    }
+
     .middle {
         width: 90%;
     }
@@ -204,14 +208,6 @@ article {
         font-size: 20px;
         margin: 2px 0;
         max-height: 25%;
-    }
-
-    * {
-        line-height: 18px;
-    }
-
-    article {
-        padding-top: 10%;
     }
 
     .goback {

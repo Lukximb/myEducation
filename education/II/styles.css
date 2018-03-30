@@ -156,9 +156,10 @@ li {
 
 .description2 {
     background-color: #454545;
+    font-size: 90%;
     color: aliceblue;
     width: 35%;
-    display: table-cell
+    display: table-cell;
 }
 
 @media only screen and (max-width:1500px) {
@@ -262,6 +263,11 @@ li {
         font-size: 85%;
         margin-top: 2.2%;
     }
+
+    .description2 {
+        font-size: 85%;
+        margin-top: 2.2%;
+    }
 }
 
 @media only screen and (max-width:750px) {
@@ -319,7 +325,7 @@ li {
     }
 
     .description2 {
-        line-height: 18px;
+        line-height: 16px;
         font-size: 85%;
         margin-top: 2.2%;
     }
