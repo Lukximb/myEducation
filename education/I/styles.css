@@ -55,8 +55,9 @@ a:active {
 }
 
 ul {
-    list-style-type: circle;
-}
+     list-style-type: circle;
+     -webkit-padding-start: 10%;
+ }
 
 li {
     max-height: 30%;
@@ -190,7 +191,6 @@ li {
         -webkit-margin-after: 0.5em;
         -webkit-margin-start: 0px;
         -webkit-margin-end: 0px;
-        -webkit-padding-start: 15px;
     }
 
     li {
@@ -244,6 +244,10 @@ li {
         font-size: 20px;
         margin: 5px 0;
         max-height: 40%;
+    }
+
+    ul {
+        -webkit-padding-start: 13%;
     }
 
     li {
@@ -302,6 +306,10 @@ li {
         max-height: 25%;
     }
 
+    ul {
+        -webkit-padding-start: 15%;
+    }
+
     li {
         margin: 0;
         padding: 0;
@@ -328,5 +336,11 @@ li {
         line-height: 16px;
         font-size: 85%;
         margin-top: 2.2%;
+    }
+}
+
+@media only screen and (max-width:400px) {
+    ul {
+        -webkit-padding-start: 20%;
     }
 }
