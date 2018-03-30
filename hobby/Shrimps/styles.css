@@ -3,7 +3,7 @@
     line-height: 24px;
     margin: 0;
     border-radius: 10px;
-    overflow: visible;
+    overflow: auto;
 }
 
 body {
@@ -31,13 +31,6 @@ h2 {
     overflow: visible;
 }
 
-h3 {
-    line-height: 24px;
-    margin: 6px 0;
-    max-height: 20%;
-    overflow: visible;
-}
-
 a:link {
     text-decoration: none;
 }
@@ -54,13 +47,8 @@ a:active {
     text-decoration: underline;
 }
 
-ul {
-    list-style-type: circle;
-}
-
-li {
-    max-height: 30%;
-    list-style-type: circle;
+article {
+    padding-top: 5%;
 }
 
 .container {
@@ -70,9 +58,9 @@ li {
 
 .middle {
     width: 65%;
-    height: 150%;
     margin: 0 auto;
     background-color: #222222;
+    height: 150%;
     border: 1.5px solid #2d2d2d;
 }
 
@@ -81,7 +69,7 @@ li {
     font-family: "Times New Roman";
     background-color: #222222;
     display: inline-block;
-    height: 15%;
+    height: 10%;
     width: 100%;
     border-bottom: 1.5px solid #2d2d2d;
     text-align: center;
@@ -97,68 +85,36 @@ li {
 
 .return {
     width: 100%;
-    max-height: 2%;
-}
-
-.margin {
-    width: 68%;
-    min-height: 1px;
-    float: left;
+    min-height: 10%;
+    max-height: 10%;
 }
 
 .goback {
     width: 32%;
     font-size: 110%;
     color: #FF8B14;
-    float: left;
-    text-align: right;
+    float: right;
     overflow: visible;
 }
 
-.goback a {
-    padding-right: 10%;
+.columns {
+    height: 75%;
+}
+
+.image {
+    width: 68%;
+    float: left;
+}
+
+.img {
     width: 100%;
-}
-
-.table {
-    display: table;
-    border-spacing: 15px;
-    width: 100%;
-    overflow: auto;
-}
-
-.row {
-    display: table-row;
-    width: 90%;
-}
-
-.tittle {
-    text-align: center;
-    color: #FF8B14;
-    display: table-cell
-}
-
-.course {
-    background-color: #454545;
-    color: #FF8100;
-    width: 20%;
-    text-align: center;
-    display: table-cell
+    padding: 5%;
 }
 
 .description {
-    background-color: #454545;
-    font-size: 90%;
-    color: aliceblue;
-    width: 35%;
-    display: table-cell;
-}
-
-.description2 {
-    background-color: #454545;
-    color: aliceblue;
-    width: 35%;
-    display: table-cell
+    width: 32%;
+    padding: 5%;
+    float: left;
 }
 
 @media only screen and (max-width:1500px) {
@@ -184,45 +140,12 @@ li {
         max-height: 40%;
     }
 
-    ul {
-        -webkit-margin-before: 0.5em;
-        -webkit-margin-after: 0.5em;
-        -webkit-margin-start: 0px;
-        -webkit-margin-end: 0px;
-        -webkit-padding-start: 15px;
-    }
-
-    li {
-        font-size: 95%;
-        max-height: 20%;
-    }
-
-    .course {
-        font-size: 90%;
+    article {
+        padding-top: 10%;
     }
 }
 
 @media only screen and (max-width:1000px) {
-
-    .return {
-        min-height: 5%;
-        max-height: 5%;
-    }
-
-    .margin {
-        height: 0;
-    }
-
-    .goback {
-        width: 100%;
-        text-align: center;
-        font-size: 16px;
-    }
-
-    .goback a {
-        padding-right: 0;
-        width: 100%;
-    }
 
     .header-txt {
         width: 100%;
@@ -245,22 +168,15 @@ li {
         max-height: 40%;
     }
 
-    li {
-        font-size: 70%;
-        max-height: 20%;
-    }
-
-    .tittle {
-        font-size: 85%;
-    }
-
-    .course {
-        font-size: 70%;
+    .goback {
+        width: 100%;
+        text-align: center;
+        font-size: 16px;
     }
 
     .description {
-        font-size: 85%;
-        margin-top: 2.2%;
+        font-size: 14px;
+        padding: 2%;
     }
 }
 
@@ -268,12 +184,6 @@ li {
 
     .middle {
         width: 90%;
-    }
-
-    .goback {
-        width: 100%;
-        text-align: center;
-        font-size: 16px;
     }
 
     .header-txt {
@@ -284,7 +194,7 @@ li {
     h1 {
         line-height: 26px;
         font-size: 24px;
-        margin: 8px 0;
+        margin: 3px 0;
         margin-top: 1px;
         max-height: 25%;
     }
@@ -292,35 +202,26 @@ li {
     h2 {
         line-height: 22px;
         font-size: 20px;
-        margin: 6px 0;
+        margin: 2px 0;
         max-height: 25%;
     }
 
-    li {
-        margin: 0;
-        padding: 0;
-        font-size: 65%;
-        max-height: 25%;
+    * {
+        line-height: 18px;
     }
 
-    .tittle {
-        margin-top: 1%;
-        font-size: 70%;
+    article {
+        padding-top: 10%;
     }
 
-    .course {
-        font-size: 55%;
+    .goback {
+        width: 100%;
+        text-align: center;
+        font-size: 16px;
     }
 
     .description {
-        line-height: 16px;
-        font-size: 85%;
-        margin-top: 2.2%;
-    }
-
-    .description2 {
-        line-height: 18px;
-        font-size: 85%;
-        margin-top: 2.2%;
+        font-size: 14px;
+        padding: 2%;
     }
 }
