@@ -8,7 +8,7 @@
 
 body {
     margin-top: 1%;
-    font-family: "Arial";
+    font-family: Arial, sans-serif;
     color: aliceblue;
     background-color: #333333;
     overflow: auto;
@@ -19,17 +19,21 @@ h1 {
     line-height: 40px;
     font-size: 40px;
     margin: 10px 0;
-    max-height: 40%;
     overflow: visible;
 }
 
 h2 {
     color: #ffb238;
     line-height: 24px;
+    font-size: 24px;
     margin: 6px 0;
-    max-height: 40%;
     overflow: visible;
 }
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight:bold;
+}
+
 
 a:link {
     text-decoration: none;
@@ -64,10 +68,9 @@ image {
 
 .header {
     color: #ff9d00;
-    font-family: "Times New Roman";
+    font-family: Times New Roman, serif;
     background-color: #222222;
     display: inline-block;
-    height: 15%;
     width: 100%;
     border-bottom: 1.5px solid #2d2d2d;
     text-align: center;
@@ -75,14 +78,14 @@ image {
 
 .header-txt {
     width: 38%;
-    height: 100%;
     padding: 5px;
     padding-left: 25px;
     float: left;
 }
 
 .image {
-    padding: 2%;
+    padding: 5%;
+    padding-top: 2%;
     width: 62%;
     height: 80%;
     float: left;
@@ -93,9 +96,11 @@ image {
 }
 
 .menu {
+    margin-top: 0;
+    margin-right: 4%;
     display: table;
-    border-spacing: 15px;
-    width: 38%;
+    border-spacing: 30px;
+    width: 34%;
     float: left;
     overflow: auto;
 }
@@ -105,36 +110,26 @@ image {
     width: 100%;
 }
 
-.after {
+.after, .actual {
     color: #ffa354;
+    background-color: #454545;
     display: table-cell;
     text-align: center;
-    padding-bottom: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
     font-size: 32px;
     width: 100%;
 }
 
 .actual {
     color: #f97b13;
-    display: table-cell;
-    text-align: center;
-    padding-bottom: 5%;
-    font-size: 32px;
-    width: 100%;
 }
 
-.before {
-    color: #ffd196;
-    text-align: center;
-    display: table-cell;
-    padding-bottom: 5%;
-    font-size: 32px;
-    width: 100%;
-}
-
-.after, .actual a {
+.after a, .actual a {
     width: 100%;
     display: block;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 @media only screen and (max-width:1500px) {
@@ -147,10 +142,11 @@ image {
     }
 
     .menu {
-        margin-left: 10%;
-        padding: 2%;
-        width: 24%;
+        margin-left: 1%;
+        margin-right: 1%;
+        width: 32%;
         float: left;
+        border-spacing: 25px;
     }
 
     .hobby {
@@ -177,30 +173,14 @@ image {
         max-height: 40%;
     }
 
-    .after {
+    .after, .actual {
         line-height: 18px;
-        margin: 5px 0;
         font-size: 18px;
-        text-align: center;
     }
 
-    .actual {
-        line-height: 18px;
-        margin: 5px 0;
-        font-size: 18px;
-        text-align: center;
-        max-height: 38px;
-    }
-
-    .before {
-        line-height: 18px;
-        margin: 5px 0;
-        font-size: 18px;
-        text-align: center;
-    }
-
-    .after, .actual a {
+    .after a, .actual a {
         padding: 0;
+        margin: 2%;
     }
 }
 
@@ -211,6 +191,7 @@ image {
         padding: 0;
         margin: 1%;
         text-align: center;
+        border-spacing: 15px;
     }
 
     .hobby {
@@ -236,25 +217,16 @@ image {
         max-height: 40%;
     }
 
-    .after {
-        line-height: 20px;
+    .after, .actual {
+        line-height: 18px;
         font-size: 18px;
-        text-align: center;
-        padding-bottom: 1%;
+        margin: 0;
     }
 
-    .actual {
-        line-height: 20px;
-        font-size: 18px;
-        text-align: center;
-        padding-bottom: 1%;
-    }
-
-    .before {
-        line-height: 20px;
-        font-size: 18px;
-        text-align: center;
-        padding-bottom: 1%;
+    .after a, .actual a {
+        padding: 0;
+        margin-left: 0;
+        margin-right: 0;
     }
 }
 
@@ -284,27 +256,5 @@ image {
         font-size: 16px;
         margin: 3px 0;
         max-height: 40%;
-    }
-
-    .after {
-        line-height: 18px;
-        margin: 3px 0;
-        font-size: 16px;
-        text-align: center;
-    }
-
-    .actual {
-        line-height: 18px;
-        margin: 3px 0;
-        font-size: 16px;
-        text-align: center;
-        min-height: 40px;
-    }
-
-    .before {
-        line-height: 18px;
-        margin: 3px 0;
-        font-size: 16px;
-        text-align: center;
     }
 }

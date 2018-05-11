@@ -19,16 +19,19 @@ h1 {
     line-height: 40px;
     font-size: 40px;
     margin: 10px 0;
-    max-height: 40%;
     overflow: visible;
 }
 
 h2 {
     color: #ffb238;
     line-height: 24px;
+    font-size: 24px;
     margin: 6px 0;
-    max-height: 40%;
     overflow: visible;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight:bold;
 }
 
 a:link {
